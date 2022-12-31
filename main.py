@@ -9,6 +9,10 @@ for window in pyautogui.getAllWindows():
     # skips when there's an empty title or filter
     if window.title == '' or not filter_title(window):
         continue
+    # if window is minimized it will maximize it
+    pyautogui.getWindowsWithTitle(window.title)[0].maximize()
+    # brings window to the foreground
+    pyautogui.getWindowsWithTitle(window.title)[0].activate()
     # determines the x postistion for the leave call button
     x = window.left + 290
     # determines the y postistion for the leave call button
@@ -16,9 +20,5 @@ for window in pyautogui.getAllWindows():
         y = (window.height + window.top) - 130
     else:
         y = window.height - 130
-    # if window is minimized it will maximize it
-    pyautogui.getWindowsWithTitle(window.title)[0].maximize()
-    # brings window to the foreground
-    pyautogui.getWindowsWithTitle(window.title)[0].activate()
     # clicks on the leave call button
     pyautogui.click(x, y)
