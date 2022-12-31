@@ -1,7 +1,8 @@
 # Bye-Call
 Have you ever turned off your pc whilst in a Discord call and forgot to leave?
 Don't worry I have you covered.
-This works great with AutoHotKeys
+With this file you can leave with only the press of a button.
+(This works great with AutoHotKeys.)
 
 
 ## Installation
