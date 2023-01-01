@@ -6,9 +6,9 @@ With this file you can leave with only the press of a button.
 
 
 ## Installation
-If you dont have [Python](https://www.python.org/downloads/release/python-3108/#:~:text=Full%20Changelog-,Files,-Version) install it first.
-After the installation download and extract the zip file at the top or press [this link](https://github.com/GRamdjiawan/Bye-Call/archive/refs/heads/main.zip).
-Then run this command in the cmd to install pyautogui.
+* If you dont have [Python](https://www.python.org/downloads/release/python-3108/#:~:text=Full%20Changelog-,Files,-Version) install it first.
+* After the installation download and extract the zip file at the top or press [this link](https://github.com/GRamdjiawan/Bye-Call/archive/refs/heads/main.zip).
+* Then run this command in the cmd to install pyautogui.
 
 ```bash
 pip install pyautogui
