@@ -10,9 +10,10 @@ for window in pyautogui.getAllWindows():
     if window.title == '' or not filter_title(window):
         continue
     # if window is minimized it will maximize it
-    pyautogui.getWindowsWithTitle(window.title)[0].maximize()
+    if window.left == -32000:
+        window.maximize()
     # brings window to the foreground
-    pyautogui.getWindowsWithTitle(window.title)[0].activate()
+    window.activate()
     # determines the x postistion for the leave call button
     x = window.left + 290
     # determines the y postistion for the leave call button
