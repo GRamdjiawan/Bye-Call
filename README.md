@@ -23,9 +23,7 @@ pip install pyautogui
 ```autohotkey
 your_combination::
     ;Leaves the call
-    Run, "path_to_file"
-    ;Delays shutdown for 1 second
-    Sleep, 1000
+    RunWait, "path_to_file"
     ;Turns the pc off
     Shutdown, 1
 Return
